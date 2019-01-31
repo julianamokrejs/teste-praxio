@@ -54,12 +54,6 @@ form {
     display: block;
 }
 
-p {
-    font-size: 20px;
-    color: #fff;
-    font-weight: bold;
-}
-
 span {
     color: #585859;
     font-weight: 300;
@@ -202,13 +196,12 @@ li {
     display: flex;
     justify-content: space-around;
     width: 90%;
-    /* margin-bottom: 20%; */
     margin: 0 auto 20% auto;
 }
 
 .card {
     width: 297px;
-    height: 400px;
+    height: 450px;
     background-color: white;
     border-radius: 5px;
     padding: 30px;
@@ -228,30 +221,20 @@ li {
     height: 114.8px;
     margin-bottom: 5%;
 }
-.card-header:hover {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(../img/bg-front.png);
-    background-size: 65%;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 150px;
-    margin-bottom: 5%;
-}
-
 
 .card-footer {
-    height: 10%;
-    background-color: black;
+    height: 20%;
+    background-image: url(../img/bg-front.png);
+    background-size: 195%;
+    background-repeat: no-repeat;
 }
 
 #card-1 {
-    background-image: 
+    background-image: url(../img/bg-front.png);
 }
 
 .card:hover {
-    height: 480px;
+    transform: scale(1.1);
 }
 
 .botao-card {
@@ -272,15 +255,6 @@ li {
 .botao-card a {
     color: #585859;
 }
-
-.botao-card:hover{
-    background-color: #733FFF;
-    color: white;
-}
-
-/* .botao-card a:hover{
-    color: white;
-} */
 
 .footer-home {
     height: 470px;
@@ -341,6 +315,42 @@ li {
     border: #C2C2C2 1px solid;
     margin-bottom: 2%;
 }
+
+#cep-error {
+    margin-top: 5px;
+    font-size: 12px;
+    color: red;
+    display: none;
+}
+
+#cep-error {
+    margin-top: 5px;
+    font-size: 12px;
+    color: red;
+    display: none;
+}
+
+#cpf-error {
+    margin-top: 5px;
+    font-size: 12px;
+    color: red;
+    display: none;
+}
+
+.email-erro {
+    margin-top:0;
+    font-size: 12px;
+    color: red;
+    display: none;
+}
+
+#senha-error {
+    margin-top: 5px;
+    font-size: 12px;
+    color: red;
+    display: none;
+}
+
 
 .campo-cep {
     width: 100px;

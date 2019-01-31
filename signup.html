@@ -26,16 +26,19 @@
                     <h3>Informações Pessoais</h3>
                     <form>
                         <input id="name" name="name" type="text" placeholder="Nome/Razão Social" class="campo"><br>
-                        <input id="cpf" name="cpf" type="number" placeholder="CPF" class="campo-num">
-                        <input id="tel" name="tel" type="phone" placeholder="Telefone" class="campo-num">
-                        <input id="email" name="email" type="text" placeholder="Email" class="campo">
+                        <input id="cpf" name="cpf" type="text" placeholder="CPF" class="campo-num">
+                        <input id="tel" name="tel" type="phone" placeholder="Telefone" maxlength="17" class="campo-num">
+                        <p class="email-erro">Insira um e-mail válido</p>
+                        <input id="email" name="email" type="email" placeholder="Email" class="campo" required>
+                        <p id="senha-error">A senha deve conter no mínimo 7 caracteres</p>
                         <input id="senha" name="senha" type="password" placeholder="Senha" class="campo">
                     </form>
                 </div>
                 <div class="cadastro-end">
                     <h3>Endereço</h3>
                     <form>
-                        <input id="cep" name="cep" type="number" placeholder="Cep" class="campo-cep">
+                        <p id="cep-error">Este CEP é inválido</p>
+                        <input id="cep" name="cep" type="text" placeholder="Cep" class="campo-cep">
                         <input id="logradouro" name="logradouro" type="text" placeholder="Logradouro" class="campo-end">
                         <input id="numero" name="numero" type="number" placeholder="Número" class="campo-cep">
                         <input id="bairro" name="bairro" type="text" placeholder="Bairro" class="campo-end">
@@ -43,7 +46,7 @@
                 </div>
             </div>
             <div class="links-cadastro">
-                <button type="button" class="botao-cadastro"><a href="./home.html">Cadastrar</a></button>
+                <button type="button" class="botao-cadastro">Cadastrar</button>
                 <a href="login.html"><h5>Já tem uma conta? Faça login</h5></a>
             </div>
         </div>
@@ -53,6 +56,9 @@
         </footer>
 
     </div>
+    <script src="./js/script.js"></script>
+    <script src="./js/get_data.js"></script>
+
 </body>
 
 </html>
